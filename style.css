@@ -1,36 +1,39 @@
-.right{
-    border:1px solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.left{
-    border:1px solid black;
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.left,
+.right {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-
-.left, .right{
-display:inline-block;
-height:100%;
-width:50%;
-border:1px solid black;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-}
-.left{
+.left {
     background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_451,c_limit/a51d84b2-282a-44d6-957d-aa57473ed73d/nike-just-do-it.jpg);
 }
-.right{
-background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_451,c_limit/0376dfa6-a2d7-4867-bd13-4b8e465705c1/nike-just-do-it.jpg);
+
+.right {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_451,c_limit/0376dfa6-a2d7-4867-bd13-4b8e465705c1/nike-just-do-it.jpg);
 }
-p{
+
+p {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 50px;
 }
